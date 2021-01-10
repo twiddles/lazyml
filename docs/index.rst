@@ -1,4 +1,4 @@
-Welcome to Lazy Predict's documentation!
+Welcome to LazyML's documentation!
 ======================================
 
 .. toctree::

@@ -1,8 +1,8 @@
 ============
-Lazy Predict
+LazyML
 ============
   
-Lazy Predict helps build a lot of basic models without much code and helps understand which models works better without any parameter tuning.
+LazyML helps build a lot of basic models without much code and helps understand which models works better without any parameter tuning.
 
 * Free software: MIT license
 * Documentation: https://lazyml.readthedocs.io.
@@ -11,7 +11,7 @@ Lazy Predict helps build a lot of basic models without much code and helps under
 Installation
 ============
 
-To install Lazy Predict::
+To install LazyML::
 
     pip install lazyml
 
@@ -19,7 +19,7 @@ To install Lazy Predict::
 Usage
 =====
 
-To use Lazy Predict in a project::
+To use LazyML in a project::
 
     import lazyml
 

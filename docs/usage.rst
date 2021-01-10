@@ -2,7 +2,7 @@
 Usage
 =====
 
-To use Lazy Predict in a project::
+To use LazyML in a project::
 
     import lazyml
 

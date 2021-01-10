@@ -49,7 +49,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = u"Lazy Predict"
+project = u"LazyML"
 copyright = u"2021, Matt von Rohr"
 author = u"Matt von Rohr"
 
@@ -130,7 +130,7 @@ latex_documents = [
     (
         master_doc,
         "lazyml.tex",
-        u"Lazy Predict Documentation",
+        u"LazyML Documentation",
         u"Matt von Rohr",
         "manual",
     ),
@@ -142,7 +142,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, "lazyml", u"Lazy Predict Documentation", [author], 1)]
+    (master_doc, "lazyml", u"LazyML Documentation", [author], 1)]
 
 
 # -- Options for Texinfo output ----------------------------------------
@@ -154,7 +154,7 @@ texinfo_documents = [
     (
         master_doc,
         "lazyml",
-        u"Lazy Predict Documentation",
+        u"LazyML Documentation",
         author,
         "lazyml",
         "One line description of project.",

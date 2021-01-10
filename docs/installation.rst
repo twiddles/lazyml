@@ -8,13 +8,13 @@ Installation
 Stable release
 --------------
 
-To install Lazy Predict, run this command in your terminal:
+To install LazyML, run this command in your terminal:
 
 .. code-block:: console
 
     $ pip install lazyml
 
-This is the preferred method to install Lazy Predict, as it will always install the most recent stable release.
+This is the preferred method to install LazyML, as it will always install the most recent stable release.
 
 If you don't have `pip`_ installed, this `Python installation guide`_ can guide
 you through the process.
@@ -26,7 +26,7 @@ you through the process.
 From sources
 ------------
 
-The sources for Lazy Predict can be downloaded from the `Github repo`_.
+The sources for LazyML can be downloaded from the `Github repo`_.
 
 You can either clone the public repository:
 

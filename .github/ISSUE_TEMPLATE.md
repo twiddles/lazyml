@@ -1,4 +1,4 @@
-* Lazy Predict version:
+* LazyML version:
 * Python version:
 * Operating System:
 
