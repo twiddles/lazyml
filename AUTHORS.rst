@@ -5,9 +5,9 @@ Credits
 Development Lead
 ----------------
 
-* Shankar Rao Pandala <shankar.pandala@live.com>
+* Matt von Rohr <matt.vonrohr@mydata.ch>
 
-Contributors
+Originally forked from
 ------------
 
-None yet. Why not be the first?
+* https://github.com/twiddles/lazypredict

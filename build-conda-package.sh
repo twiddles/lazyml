@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # change the package name to the existing PyPi package you would like to build and adjust the Python versions
-pkg='lazypredict'
+pkg='lazyml'
 array=( 3.7 3.8 )
 
 echo "Building conda package ..."

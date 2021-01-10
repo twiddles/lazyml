@@ -12,7 +12,6 @@ with open("HISTORY.rst") as history_file:
     history = history_file.read()
 
 requirements = [
-    "click>=7.1.2",
     "joblib>=0.16.0",
     "lightgbm>=2.3.1",
     "numpy>=1.19.1",
@@ -36,8 +35,8 @@ test_requirements = [
 ]
 
 setup(
-    author="Shankar Rao Pandala",
-    author_email="shankar.pandala@live.com",
+    author="Matt von Rohr",
+    author_email="matt.vonrohr@mydata.ch",
     python_requires=">=3.8, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
@@ -46,19 +45,19 @@ setup(
         "Natural Language :: English",
         "Programming Language :: Python :: 3.8",
     ],
-    description="Lazy Predict help build a lot of basic models without much code and helps understand which models works better without any parameter tuning",
-    entry_points={"console_scripts": ["lazypredict=lazypredict.cli:main",],},
+    description="Lazy ML helps to build a lot of basic models without much code and helps understand which models works better without any parameter tuning",
+    # entry_points={"console_scripts": ["lazyml=lazyml.cli:main", ], },
     install_requires=requirements,
     license="MIT license",
     long_description=readme + "\n\n" + history,
     include_package_data=True,
-    keywords="lazypredict",
-    name="lazypredict",
-    packages=find_packages(include=["lazypredict", "lazypredict.*"]),
+    keywords="lazyml",
+    name="lazyml",
+    packages=find_packages(include=["lazyml", "lazyml.*"]),
     setup_requires=setup_requirements,
     test_suite="tests",
     tests_require=test_requirements,
-    url="https://github.com/shankarpandala/lazypredict",
+    url="https://github.com/twiddles/lazyml",
     version="0.2.7",
     zip_safe=False,
 )

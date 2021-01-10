@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=lazypredict
+set SPHINXPROJ=lazyml
 
 if "%1" == "" goto help
 

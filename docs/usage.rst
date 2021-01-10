@@ -4,7 +4,7 @@ Usage
 
 To use Lazy Predict in a project::
 
-    import lazypredict
+    import lazyml
 
 ==============
 Classification
@@ -12,7 +12,7 @@ Classification
 
 Example ::
 
-    from lazypredict.Supervised import LazyClassifier
+    from lazyml.supervised import LazyClassifier
     from sklearn.datasets import load_breast_cancer
     from sklearn.model_selection import train_test_split
     data = load_breast_cancer()
@@ -63,7 +63,7 @@ Regression
 
 Example ::
 
-    from lazypredict.Supervised import LazyRegressor
+    from lazyml.supervised import LazyRegressor
     from sklearn import datasets
     from sklearn.utils import shuffle
     import numpy as np

@@ -1,31 +1,11 @@
 ============
 Lazy Predict
 ============
-
-
-.. image:: https://img.shields.io/pypi/v/lazypredict.svg
-        :target: https://pypi.python.org/pypi/lazypredict
-
-.. image:: https://img.shields.io/travis/shankarpandala/lazypredict.svg
-        :target: https://travis-ci.org/shankarpandala/lazypredict
-
-.. image:: https://readthedocs.org/projects/lazypredict/badge/?version=latest
-        :target: https://lazypredict.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
-
-.. image:: https://pepy.tech/badge/lazypredict
-     :target: https://pepy.tech/project/lazypredict
-     :alt: Downloads
-
-.. image:: https://www.codefactor.io/repository/github/shankarpandala/lazypredict/badge
-   :target: https://www.codefactor.io/repository/github/shankarpandala/lazypredict
-   :alt: CodeFactor
-   
+  
 Lazy Predict helps build a lot of basic models without much code and helps understand which models works better without any parameter tuning.
 
-
 * Free software: MIT license
-* Documentation: https://lazypredict.readthedocs.io.
+* Documentation: https://lazyml.readthedocs.io.
 
 ============
 Installation
@@ -33,7 +13,7 @@ Installation
 
 To install Lazy Predict::
 
-    pip install lazypredict
+    pip install lazyml
 
 =====
 Usage
@@ -41,7 +21,7 @@ Usage
 
 To use Lazy Predict in a project::
 
-    import lazypredict
+    import lazyml
 
 ==============
 Classification
@@ -49,7 +29,7 @@ Classification
 
 Example ::
 
-    from lazypredict.Supervised import LazyClassifier
+    from lazyml.supervised import LazyClassifier
     from sklearn.datasets import load_breast_cancer
     from sklearn.model_selection import train_test_split
     
@@ -60,7 +40,7 @@ Example ::
     X_train, X_test, y_train, y_test = train_test_split(X, y,test_size=.5,random_state =123)
     
     clf = LazyClassifier(verbose=0,ignore_warnings=True, custom_metric=None)
-    models,predictions = clf.fit(X_train, X_test, y_train, y_test)
+    models, predictions = clf.fit(X_train, X_test, y_train, y_test)
     
     print(models)
 
@@ -104,23 +84,23 @@ Regression
 
 Example ::
 
-    from lazypredict.Supervised import LazyRegressor
+    from lazyml.supervised import LazyRegressor
     from sklearn import datasets
     from sklearn.utils import shuffle
     import numpy as np
-    
+
     boston = datasets.load_boston()
     X, y = shuffle(boston.data, boston.target, random_state=13)
     X = X.astype(np.float32)
-    
+
     offset = int(X.shape[0] * 0.9)
-    
+
     X_train, y_train = X[:offset], y[:offset]
     X_test, y_test = X[offset:], y[offset:]
-    
+
     reg = LazyRegressor(verbose=0,ignore_warnings=False, custom_metric=None)
-    models,predictions = reg.fit(X_train, X_test, y_train, y_test)
-    
+    models, predictions = reg.fit(X_train, X_test, y_train, y_test)
+
     print(models)
 
 
@@ -162,10 +142,3 @@ Example ::
     | DummyRegressor                |  -0.0215752 |  7.55832 |    0.0140116 |
     | LassoLars                     |  -0.0215752 |  7.55832 |    0.0180008 |
     | KernelRidge                   |  -8.24669   | 22.7396  |    0.0309792 |
-
-
-.. warning::
-    Regression and Classification are replaced with LazyRegressor and LazyClassifier.
-    Regression and Classification classes will be removed in next release
-
-
